@@ -1,0 +1,94 @@
+Closed forms and their values
+=============================
+
+Kelvin impulse balance
+----------------------
+  A massless bubble in unbounded liquid transfers its whole buoyancy
+  to the Kelvin impulse of the liquid, dI/dt = rho g V z_hat, with
+  V(t) free to change (Benjamin and Ellis 1966; Benjamin 1987). For a
+  thin planar ring I = rho pi Gamma R^2 n. Hence J = R^2 n obeys dJ/dt
+  = g V/(pi Gamma) z_hat: |J| = R^2 grows with the time integral of V,
+  and the horizontal part of J is conserved, sin(theta) R^2 =
+  sin(theta0) R0^2 for any tilt. For a level ring of constant volume
+  this is the law a^2 = a0^2 + g V t/(2 pi^2 Gamma_P) of Pedley (1968,
+  Eq. 2.10), whose circulation is Gamma_P = Gamma/(2 pi), and of
+  Turner (1957).
+
+speed of a hollow ring with surface tension
+-------------------------------------------
+  The Hamiltonian H = (1/2) rho Gamma^2 R [ln(8R/a) - 2] + 4 pi^2
+  gamma R a + 2 pi^2 p R a^2 + G(V), G the free energy of the gas, is
+  stationary in a at the core balance p_g = p - rho Gamma^2/(8 pi^2
+  a^2) + gamma/a. U = dH/dI at fixed Gamma then gives U = Gamma/(4 pi
+  R) [ln(8R/a) - 1/2 + 1/We], We = rho Gamma^2/(4 pi^2 gamma a); the
+  hollow constant 1/2 of Hicks is recovered for gamma = 0. With
+  isothermal gas the balance times a^2 is a quadratic in a with one
+  positive root. The same core balance, with adiabatic gas, appears as
+  Eq. 53 of Ruban and Rasmussen (2003).
+
+earlier treatments of hydrostatic volume change
+-----------------------------------------------
+  Pedley (1968, section 5) wrote the impulse equation with Boyle's
+  law, da^2/dt = C1 (1 + h0/d)/(1 + h/d), noted that it is not readily
+  integrable, and integrated it numerically for one laboratory bubble
+  released about 3.4 m below the surface; the radius differed from the
+  constant-volume value by just under 7 percent after 40 s, which he
+  judged nearly negligible. Ruban and Rasmussen (2003) included an
+  adiabatic gas in a variational model of a vertically moving bubble
+  ring and integrated it numerically. Neither gives a closed form. The
+  exact solution above, the universal gain ((1 + Pi)/Pi) ln(1 + Pi)
+  and its growth with release depth, under which the correction
+  dominates at diving depths, are new as far as the authors know.
+
+frozen-logarithm solution (ideal isothermal gas)
+------------------------------------------------
+  With L frozen, L dR = -(2 g V/Gamma^2) dd and V = V0 p0/p give R =
+  R0 + ell_B ln(p0/p), ell_B = 2 V0 p0/(rho Gamma^2 L). The same law
+  holds for any tilt, because the tilt cancels from the radius
+  equation. Over a constant-volume ring the radius gain is ((1 +
+  Pi)/Pi) ln(1 + Pi), Pi = rho g (d0 - d_e)/p(d_e); the expansion per
+  meter of rise, ell_B rho g/p, grows as 1/p.
+
+exact solution with the running logarithm
+-----------------------------------------
+  For the ideal gas L = L0 + (3/2) ln r - lambda/2 with r = R/R0 and
+  lambda = ln(p0/p), so L dR = ell_B L0 dlambda is linear in
+  lambda(r): b dlambda/dr + lambda/2 = L0 + (3/2) ln r, b = ell_B
+  L0/R0. With alpha = 1/(2b): lambda(r) = 2 L0 (1 - exp(-alpha (r -
+  1))) + 3 [ln r - exp(-alpha r)(Ei(alpha r) - Ei(alpha))]. Ascent
+  time and lateral travel follow by one quadrature.
+
+reference ring, values
+----------------------
+  R(0.5 m), full closure ODE .......................... 18.510 cm
+  R(0.5 m), ideal-gas ODE ............................. 18.1129 cm
+  R(0.5 m), exact Ei solution ......................... 18.1129 cm
+  R(0.5 m), frozen-log law ............................ 21.182 cm
+  R(0.5 m), constant volume ........................... 14.786 cm
+  ascent time, full / exact / frozen .................. 41.44 / 41.02 / 56.16 s
+  ascent time, constant volume ........................ 37.20 s
+  lateral travel, theta0 = 30 deg (exact) ............. 1.449 m
+  tilt at 0.5 m, theta0 = 30 deg ...................... 2.18 deg
+
+hollow-core capillary waves
+---------------------------
+  Linearizing about the potential vortex outside a gas column of
+  radius a with surface tension gives, for azimuthal mode m and axial
+  wavenumber k, (omega - m Omega)^2 = [Omega^2 + gamma (k^2 a^2 + m^2
+  - 1)/(rho a^3)] / G, G = -K_m(ka)/(ka K_m'(ka)) > 0. Only m = 0 can
+  be unstable, and only if We < 1 - (ka)^2, so swirl stabilizes every
+  wavelength once We > 1. Without swirl the classical gas-column
+  result is recovered. These conditions are those of Pedley (1967),
+  applied to the toroidal bubble by Pedley (1968, Eqs. 6.2 to 6.4);
+  they are rederived here only to fix notation.
+
+viscous breakup criterion (Pedley 1968)
+---------------------------------------
+  Vorticity diffusing from the free-slip core surface lowers the swirl
+  there to v(b) = Gamma_P/b [1 - exp(-3 b^2/(8 nu t))] (Pedley 1968,
+  Eq. 6.1), so the capillary margin becomes M = We [1 - exp(-3 a^2/(8
+  nu t))]^2 and the core turns unstable when M = 1 (Eq. 6.5).
+  Evaluated along the present trajectories, with the core radius a(t)
+  from the Boyle closure, it gives a breakup time and depth for each
+  release depth (figure 4b).
+

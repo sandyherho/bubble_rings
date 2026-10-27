@@ -1,0 +1,61 @@
+Numerical verification
+======================
+
+independent algorithms
+----------------------
+  The planar model integrates the Kelvin impulse balance with an
+  adaptive eighth-order Runge-Kutta method. The closed forms are
+  evaluated by root finding and adaptive quadrature. The filament
+  model integrates the regularized Biot-Savart law with a local
+  Kutta-Joukowski drift and never uses the impulse balance, so its
+  agreement with the planar model and with the impulse identity is an
+  independent check.
+
+closed forms against the planar ODE
+-----------------------------------
+  exact Ei radius, max relative error ................. 7.07e-12
+  frozen-log radius at 0.5 m .......................... 1.41e-12
+  frozen-log ascent time .............................. 4.59e-12
+  exact lateral travel, 30 deg ........................ 1.99e-12
+  sin(theta) law, max abs error ....................... 1.67e-16
+  tilted vs level radius at 0.5 m ..................... 7.80e-13
+  core quadratic vs bracketing root ................... 2.22e-16
+  F(beta) table vs quadrature, max .................... 2.11e-10
+  Pedley (1968) bubble, Boyle vs constant V, 40 s ..... +7.7 % (Pedley: just under 7 %)
+  same, core radius b0 ................................ 4.61 mm (0.46 cm)
+  capillary growth at We = 1, max ..................... -1.42e-07
+
+filament
+--------
+  ring speed, relative error at N = 16 .. 512 (subtracted):
+    a/R = 0.1  : 6.25e-04, 6.25e-04, 6.25e-04, 6.25e-04, 6.25e-04, 6.25e-04
+    a/R = 0.03 : 5.79e-05, 5.79e-05, 5.79e-05, 5.79e-05, 5.79e-05, 5.79e-05
+    a/R = 0.01 : 6.52e-06, 6.52e-06, 6.52e-06, 6.52e-06, 6.52e-06, 6.52e-06
+  same, plain trapezoidal rule:
+    a/R = 0.1  : 2.65e-01, 1.16e-01, 2.36e-02, 1.35e-03, 6.26e-04, 6.25e-04
+    a/R = 0.03 : 4.31e-01, 2.97e-01, 1.70e-01, 6.40e-02, 8.97e-03, 1.85e-04
+    a/R = 0.01 : 5.32e-01, 4.20e-01, 3.08e-01, 2.00e-01, 9.98e-02, 2.76e-02
+  RK4 node error vs dt 8.86e-05, 4.35e-06, 2.32e-07, 1.31e-08 m
+    observed orders 4.35, 4.23, 4.15
+  impulse residual, vertical, max over 5 s ............ 1.11e-05
+  impulse residual, horizontal, max ................... 2.73e-05
+  filament vs planar at 7 m, eps0 = 0.02, 0.04, 0.08, 0.16
+    radius 1.56e-06, 1.66e-05, 6.77e-05, 1.00e-04; orders 3.41, 2.03, 0.56
+    arrival time 2.64e-05, 8.38e-05, 1.73e-04, 2.12e-04
+  wavy ring at 3 s, N = 64 / 128 / 256:
+    R (m) 0.06431267, 0.06431156, 0.06431188
+    z (m) -8.890309, -8.890328, -8.890367
+    wave amplitude (mm) 4.4856, 4.4886, 4.4984
+
+reading these numbers
+---------------------
+  The closed forms agree with the ODE to its tolerance. With the
+  near-singular part subtracted, the filament reproduces the ring
+  speed at every node number; the remaining plateau is the O(eps^2 ln
+  eps) difference between the regularized ring and the thin-ring
+  asymptote, while the plain rule needs node spacing below the core
+  parameter. RK4 converges at fourth order until roundoff. The impulse
+  residual measures the time integration and the Simpson rule for int
+  V dt. Filament and planar model differ at O(eps^2), the order
+  neglected by thin-ring theory.
+

@@ -1,0 +1,25 @@
+Sensitivity of headline numbers
+===============================
+
+planar model, full closure, end depth 0.5 m
+-------------------------------------------
+  case              | R_e (cm) | T (s) | gain | flare | x30 (m) | hs/2R min
+  reference         |    18.51 |  41.4 | 1.38 |  1.47 |    1.44 |     2.28
+  V0 = 5 mL         |    11.89 |  30.8 | 1.40 |  1.68 |    2.26 |     4.55
+  V0 = 20 mL        |    30.90 |  60.0 | 1.37 |  1.26 |    0.84 |     1.14
+  R0 = 3 cm         |    17.28 |  37.3 | 1.37 |  1.24 |    0.89 |     2.27
+  R0 = 8 cm         |    20.68 |  48.1 | 1.39 |  1.65 |    2.08 |     2.28
+  Gamma = 0.03      |    49.32 | 154.3 | 1.35 |  1.17 |    0.51 |     0.58
+  Gamma = 0.12      |     8.92 |  14.5 | 1.42 |  1.82 |    3.00 |     9.02
+  adiabatic n = 1.4 |    17.31 |  40.1 | 1.26 |  1.21 |    1.47 |     2.76
+  fresh water       |    18.43 |  41.4 | 1.37 |  1.45 |    1.44 |     2.31
+  release 20 m      |    35.06 | 121.9 | 1.63 |  2.01 |    1.71 |     1.48
+
+reading
+-------
+  Absolute radii, times and drifts scale with the unmeasured gas
+  volume, radius and circulation. The gain over a constant-volume ring
+  depends mainly on the release pressure number, and the self-leveling
+  law sin(theta) R^2 = const holds in every case because it follows
+  from the impulse balance alone.
+

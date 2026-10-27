@@ -1,0 +1,57 @@
+References
+==========
+
+bubble rings and buoyant vortex rings
+-------------------------------------
+  Turner JS (1957) Buoyant vortex rings. Proc R Soc Lond A 239:61.
+    https://doi.org/10.1098/rspa.1957.0022
+  Walters JK, Davidson JF (1963) The initial motion of a gas bubble
+    formed in an inviscid liquid. Part 2. J Fluid Mech 17:321.
+    https://doi.org/10.1017/S0022112063001373
+  Pedley TJ (1967) The stability of rotating flows with a
+    cylindrical free surface. J Fluid Mech 30:127.
+    https://doi.org/10.1017/S0022112067001338
+  Pedley TJ (1968) The toroidal bubble. J Fluid Mech 32:97.
+    https://doi.org/10.1017/S0022112068000601
+  Lundgren TS, Mansour NN (1991) Vortex ring bubbles. J Fluid Mech
+    224:177. https://doi.org/10.1017/S0022112091001702
+  Vasel-Be-Hagh AR, Carriveau R, Ting DS-K (2015) A balloon
+    bursting underwater. J Fluid Mech 769:522.
+    https://doi.org/10.1017/jfm.2015.126
+  Vasel-Be-Hagh AR, Carriveau R, Ting DS-K, Turner JS (2015) Drag
+    of buoyant vortex rings. Phys Rev E 92:043024.
+    https://doi.org/10.1103/PhysRevE.92.043024
+  Ruban VP, Rasmussen JJ (2003) Toroidal bubbles with circulation
+    in ideal hydrodynamics: a variational approach. Phys Rev E
+    68:056301. https://doi.org/10.1103/PhysRevE.68.056301
+  Cheng M, Lou J, Lim TT (2013) Motion of a bubble ring in a
+    viscous fluid. Phys Fluids 25:067104.
+    https://doi.org/10.1063/1.4811407
+  Chang C, Llewellyn Smith SG (2018) The motion of a buoyant
+    vortex filament. J Fluid Mech 857:R1.
+    https://doi.org/10.1017/jfm.2018.795
+
+impulse, filaments, numerics
+----------------------------
+  Benjamin TB, Ellis AT (1966) The collapse of cavitation bubbles
+    and the pressures thereby produced against solid boundaries.
+    Phil Trans R Soc Lond A 260:221.
+    https://doi.org/10.1098/rsta.1966.0046
+  Benjamin TB (1987) Hamiltonian theory for motions of bubbles in
+    an infinite liquid. J Fluid Mech 181:349.
+    https://doi.org/10.1017/S002211208700212X
+  Moore DW, Saffman PG (1972) The motion of a vortex filament with
+    axial flow. Phil Trans R Soc Lond A 272:403.
+    https://doi.org/10.1098/rsta.1972.0055
+  Widnall SE, Bliss DB, Tsai C-Y (1974) The instability of short
+    waves on a vortex ring. J Fluid Mech 66:35.
+    https://doi.org/10.1017/S0022112074000048
+  Leonard A (1985) Computing three-dimensional incompressible
+    flows with vortex elements. Annu Rev Fluid Mech 17:523.
+    https://doi.org/10.1146/annurev.fl.17.010185.002515
+  Saffman PG (1992) Vortex Dynamics. Cambridge University Press.
+    https://doi.org/10.1017/CBO9780511624063
+  Hou TY, Lowengrub JS, Shelley MJ (1994) Removing the stiffness
+    from interfacial flows with surface tension. J Comput Phys
+    114:312. https://doi.org/10.1006/jcph.1994.1170
+

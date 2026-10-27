@@ -1,0 +1,41 @@
+Symbols, units, and reference values
+====================================
+
+units
+-----
+  SI throughout: m, s, Pa, m^3 (mL where stated), m^2 s^-1 for
+  circulation. z points up and depth is d = -z. The ring is followed
+  from its release depth d0 to d_e = 0.5 m, where the free surface
+  lies more than twice the largest ring radius above the center.
+
+reference values (illustrative, not calibrated)
+-----------------------------------------------
+  sea water density rho ............................... 1025.0 kg m^-3
+  gravity g ........................................... 9.81 m s^-2
+  surface tension gamma ............................... 0.073 N m^-1
+  surface pressure p_atm .............................. 101325.0 Pa
+  release depth d0 .................................... 10.0 m
+  ring radius R0 ...................................... 0.05 m
+  gas volume at release V0 ............................ 10 mL
+  circulation Gamma ................................... 0.06 m^2 s^-1
+  polytropic exponent ................................. 1 (isothermal)
+  end depth d_e ....................................... 0.5 m
+
+derived at release
+------------------
+  core radius a0 = (V0/(2 pi^2 R0))^(1/2) ............. 3.183 mm
+  slenderness a0/R0 ................................... 0.0637
+  ln(8R0/a0) - 1/2 = L0 ............................... 4.3336
+  Boyle length ell_B = 2 V0 p0/(rho Gamma^2 L0) ....... 25.25 cm
+  release pressure number rho g d0/p_atm .............. 0.9924
+  swirl speed u_c = Gamma/(2 pi a0) ................... 3.000 m s^-1
+  swirl Weber number .................................. 402.2
+  core Froude number .................................. 288.2
+  swirl head u_c^2/(2g) ............................... 0.459 m
+  swirl pressure deficit / p0 ......................... 0.0228
+  circulation Reynolds number Gamma/nu ................ 6e+04
+  rise speed at release ............................... 0.414 m s^-1
+  thermal time a0^2/kappa_gas ......................... 0.507 s
+  pressure time p0/(rho g U0) ......................... 48.5 s
+  ratio (isothermal if << 1) .......................... 0.0104
+

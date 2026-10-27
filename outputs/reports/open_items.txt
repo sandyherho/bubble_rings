@@ -1,0 +1,46 @@
+Open items before submission
+============================
+
+prior work and what is new
+--------------------------
+  Pedley (1968) gives the impulse law for a toroidal bubble, the
+  hollow-core speed, the viscous diffusion of vorticity from the core,
+  the capillary stability criterion (from Pedley 1967) and a breakup
+  time; he also integrated the Boyle-law impulse equation numerically
+  for one laboratory bubble and found a 7 percent effect, which the
+  present model reproduces (verification.txt). Ruban and Rasmussen
+  (2003) treat an adiabatic gas core variationally and numerically;
+  their Eq. 53 is the core balance used here. Cheng, Lou and Lim
+  (2013) simulate viscous bubble rings at Re = 30 to 100 with constant
+  gas volume and show breakup through azimuthal surface-tension
+  instability of short waves (k a near 2), the band the filament model
+  projects out. Chang and Llewellyn Smith (2018) solve a tilted
+  buoyant filament and obtain R sin(theta) = const; the present
+  closure for a massless gas core gives R^2 sin(theta) = const.
+  Claimed as new: the exact Boyle solution and universal gain, their
+  growth with release depth, the tilt law and lateral drift, the
+  swirl-head bound, the R^-1/2 decay of long bending waves, and
+  Pedley's breakup criterion evaluated along Boyle trajectories.
+
+physics left out
+----------------
+  Inviscid liquid: circulation is held fixed, although viscous
+  diffusion from the free-slip core surface and turbulence decay it in
+  practice; the breakup depths of figure 4b use Pedley's estimate of
+  that decay at the core surface only. No gas dissolution. Uniform
+  core cross-section along the filament, justified while the vertical
+  extent of the core stays below the swirl head (figure 4d). No
+  core-scale dynamics: bending waves with k a > 1, where the
+  Widnall-type short-wave instability lives, are projected out, so the
+  breakup itself is not computed. Free-surface interaction above 0.5 m
+  is not modeled.
+
+parameters
+----------
+  Gas volume, radius and circulation of diver-blown rings are
+  illustrative. The results stated as ratios (gain over constant
+  volume, flaring, the tilt law, the R^-1/2 wobble decay) do not
+  depend on them; absolute radii, times and drifts do. A pool test
+  with a camera at two depths would fix R0, V0 and Gamma and test the
+  tilt law directly.
+
